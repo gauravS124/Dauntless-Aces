@@ -1,0 +1,56 @@
++ start 
+- Hello. I am a Konnex! How may I help you?
+
+! sub i'm     = i am
+! sub i'd     = i would
+! sub i've    = i have
+! sub i'll    = i will
+! sub don't   = do not
+! sub isn't   = is not
+! sub you'd   = you would
+! sub you're  = you are
+! sub you've  = you have
+! sub you'll  = you will
+! sub what's  = what is
+! sub whats   = what is
+! sub what're = what are
+! sub what've = what have
+! sub what'll = what will
+! sub who's   = who is
+
++ (how are you|how are things)
+- I'm great, how are you?
+- I'm good, you?
+- Good :) you?
+- Great! You?
+- I'm fine, thanks for asking!How are you?
+-Fine... how are you?
+-Pretty well, how are you?
+-Fantastic, how are you?
+
++(what is going on|what is up)
+-Nothing much...
+-Exciting things!
+
++ (hello bot|hi|hey|hello)
+- Hello, human!
+-Hey there!
+-Hi!
+
++(good|great|happy)
+-Nice to know!
+
++(sad|bored|annoyed|depressed)
+-Why?
+-I am listening..
+-Cheer up bro!
+
++(bye|good bye|goodbye)
+-See ya!
+-Goodbye!
+
++ *
+- Sorry, I don't understand that.
+-Go on..
+-Bro...
+-Try again..

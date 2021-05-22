@@ -1,23 +1,41 @@
-import logo from './logo.svg';
 import './App.css';
+import 'materialize-css/dist/css/materialize.min.css';
+import M from 'materialize-css/dist/js/materialize.min.js'
+import React,{Fragment, useEffect} from 'react';
+import Navbar from './components/layout/Navbar'
+import Bug from './components/bugs/Bugs'
+import Notification from './components/notification/Notifications'
+import WidgetBtn from './components/layout/WidgetBtn'
+import ReportBugModal from './components/bugs/ReportBugModal'
+import NotificationModal from './components/notification/NotificationModal'
+import FeedbackModal from './components/feedback/FeedbackModal'
+import PerformanceModal from './components/performance/PerformanceModal'
+import SupportModal  from './components/support/SupportModal'
 
-function App() {
+
+const App = () => {
+  useEffect(() => {
+    
+    M.AutoInit();
+    
+  });
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+     <Fragment>
+       <Navbar />
+       <div className="container">
+         < WidgetBtn />
+         <ReportBugModal />
+         <NotificationModal />
+         <FeedbackModal />
+         <PerformanceModal />
+         <SupportModal />
+          <Bug />
+          {/* <Notification /> */}
+
+       </div>
+      
+     </Fragment>
     </div>
   );
 }
